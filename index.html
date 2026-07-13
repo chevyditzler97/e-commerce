@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/42e5ae6bda.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -24,6 +25,26 @@
             <li><a href="#" class="nav__link">Contact</a></li>
             <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
           </ul>
+
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+              </li>
+              <li class="menu__list">
+                <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <header>
@@ -33,7 +54,7 @@
             <h2>
               Find your dream book with <span class="purple">Library</span>
             </h2>
-            <button class="btn">Browse Books</button>
+            <a href="#features"><button class="btn">Browse Books</button></a>
           </div>
           <figure class="header__img--wrapper">
             <img src="./assets/Undraw_Books.svg" alt="girl reading textbook" />
@@ -85,17 +106,19 @@
       <section id="features">
         <div class="container">
           <div class="row">
-           <h2 class="section__title">
-            Featured <span class="purple">Books</span>
-           </h2> 
-           <div class="books">
+            <h2 class="section__title">
+              Featured <span class="purple">Books</span>
+            </h2>
+            <div class="books">
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/crack the coding interview.png" alt="cracking the coding interview cover">
+                  <img
+                    class="book__img"
+                    src="./assets/crack the coding interview.png"
+                    alt="cracking the coding interview cover"
+                  />
                 </figure>
-                <div class="book__title">
-                  Cracking the Coding Interview
-                </div>
+                <div class="book__title">Cracking the Coding Interview</div>
                 <div class="book__ratings">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -109,11 +132,13 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/atomic habits.jpg" alt="atomic habits">
+                  <img
+                    class="book__img"
+                    src="./assets/atomic habits.jpg"
+                    alt="atomic habits"
+                  />
                 </figure>
-                <div class="book__title">
-                  Atomic Habits
-                </div>
+                <div class="book__title">Atomic Habits</div>
                 <div class="book__ratings">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -127,11 +152,13 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/david goggins.jpeg" alt="cant hurt me">
+                  <img
+                    class="book__img"
+                    src="./assets/david goggins.jpeg"
+                    alt="cant hurt me"
+                  />
                 </figure>
-                <div class="book__title">
-                  Can't Hurt Me
-                </div>
+                <div class="book__title">Can't Hurt Me</div>
                 <div class="book__ratings">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -145,11 +172,13 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/deep work.jpeg" alt="cracking the coding interview cover">
+                  <img
+                    class="book__img"
+                    src="./assets/deep work.jpeg"
+                    alt="cracking the coding interview cover"
+                  />
                 </figure>
-                <div class="book__title">
-                  Deep Work
-                </div>
+                <div class="book__title">Deep Work</div>
                 <div class="book__ratings">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -160,27 +189,28 @@
                 <div class="book__price">
                   <span class="book__price--normal">$23.95</span> $10.95
                 </div>
-             </div>
-           </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-
       <section id="recent">
         <div class="container">
           <div class="row">
-           <h2 class="section__title">
-            Latest <span class="purple">Books</span>
-           </h2> 
-           <div class="featured__books">
+            <h2 class="section__title">
+              Latest <span class="purple">Books</span>
+            </h2>
+            <div class="featured__books">
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/book-1.jpeg" alt="cracking the coding interview cover">
+                  <img
+                    class="book__img"
+                    src="./assets/book-1.jpeg"
+                    alt="cracking the coding interview cover"
+                  />
                 </figure>
-                <div class="book__title">
-                  The 10X Rule
-                </div>
+                <div class="book__title">The 10X Rule</div>
                 <div class="book__ratings">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -194,11 +224,13 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/book-2.jpeg" alt="atomic habits">
+                  <img
+                    class="book__img"
+                    src="./assets/book-2.jpeg"
+                    alt="atomic habits"
+                  />
                 </figure>
-                <div class="book__title">
-                  Be Obsessed or be Average
-                </div>
+                <div class="book__title">Be Obsessed or be Average</div>
                 <div class="book__ratings">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -212,11 +244,13 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/book-3.jpeg" alt="cant hurt me">
+                  <img
+                    class="book__img"
+                    src="./assets/book-3.jpeg"
+                    alt="cant hurt me"
+                  />
                 </figure>
-                <div class="book__title">
-                  Rick Dad Poor Dad
-                </div>
+                <div class="book__title">Rick Dad Poor Dad</div>
                 <div class="book__ratings">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -230,11 +264,13 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/book-4.jpeg" alt="cracking the coding interview cover">
+                  <img
+                    class="book__img"
+                    src="./assets/book-4.jpeg"
+                    alt="cracking the coding interview cover"
+                  />
                 </figure>
-                <div class="book__title">
-                  Rich Dad's Cashflow Quadrant
-                </div>
+                <div class="book__title">Rich Dad's Cashflow Quadrant</div>
                 <div class="book__ratings">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -245,14 +281,16 @@
                 <div class="book__price">
                   <span class="book__price--normal">$23.95</span> $16.95
                 </div>
-             </div>
+              </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/book-6.jpeg" alt="cracking the coding interview cover">
+                  <img
+                    class="book__img"
+                    src="./assets/book-6.jpeg"
+                    alt="cracking the coding interview cover"
+                  />
                 </figure>
-                <div class="book__title">
-                  The 5 Second Rule
-                </div>
+                <div class="book__title">The 5 Second Rule</div>
                 <div class="book__ratings">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -263,14 +301,16 @@
                 <div class="book__price">
                   <span class="book__price--normal">$29.95</span> $15.95
                 </div>
-             </div>
+              </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/book-7.jpg" alt="cracking the coding interview cover">
+                  <img
+                    class="book__img"
+                    src="./assets/book-7.jpg"
+                    alt="cracking the coding interview cover"
+                  />
                 </figure>
-                <div class="book__title">
-                  Your Next Five Moves
-                </div>
+                <div class="book__title">Your Next Five Moves</div>
                 <div class="book__ratings">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -281,14 +321,16 @@
                 <div class="book__price">
                   <span class="book__price--normal">$20.95</span> $14.95
                 </div>
-             </div>
+              </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/book-5.jpeg" alt="cracking the coding interview cover">
+                  <img
+                    class="book__img"
+                    src="./assets/book-5.jpeg"
+                    alt="cracking the coding interview cover"
+                  />
                 </figure>
-                <div class="book__title">
-                  Power
-                </div>
+                <div class="book__title">Power</div>
                 <div class="book__ratings">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -299,14 +341,16 @@
                 <div class="book__price">
                   <span class="book__price--normal">$23.95</span> $10.95
                 </div>
-             </div>
+              </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/book-8.jpeg" alt="cracking the coding interview cover">
+                  <img
+                    class="book__img"
+                    src="./assets/book-8.jpeg"
+                    alt="cracking the coding interview cover"
+                  />
                 </figure>
-                <div class="book__title">
-                  Mastery
-                </div>
+                <div class="book__title">Mastery</div>
                 <div class="book__ratings">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -317,8 +361,8 @@
                 <div class="book__price">
                   <span class="book__price--normal">$25.95</span> $12.95
                 </div>
-             </div>
-           </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -329,14 +373,35 @@
             <h2 class="section__title">
               Explore more <span class="purple">Books</span>
             </h2>
-            <button class="btn">Browse Books</button>
+            <a href="#features">
+              <button class="btn">Browse Books</button>
+            </a>
           </div>
         </div>
-
       </section>
-      
-
-
     </main>
+
+    <footer>
+      <div class="container">
+        <div class="row row__column">
+          <a href="#">
+            <figure class="footer__logo--img">
+              <img
+                src="./assets/Library.svg"
+                class="foooter__logo"
+                alt="Library"
+              />
+            </figure>
+          </a>
+          <div class="footer__list">
+            <a href="" class="footer__link">Home</a>
+            <a href="" class="footer__link no-cursor">About</a>
+            <a href="" class="footer__link">Books</a>
+            <a href="" class="footer__link no-cursor">Contact</a>
+          </div>
+          <div class="footer__copyright">Copyright &copy; 2026 Library</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
